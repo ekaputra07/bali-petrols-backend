@@ -1,6 +1,14 @@
+// The first version of Bali Petrols DB tabels doesn't includes address field
+// we use this function to loop through existing data and
+// insert address info to it by using Google Geocoding API.
+Parse.Cloud.define('initReverseGeocoding', function(request, response){
+    // TODO: do reverse geocoding here
+    response.success('success');
+});
 
-// Use Parse.Cloud.define to define as many cloud functions as you want.
-// For example:
-Parse.Cloud.define("hello", function(request, response) {
-  response.success("Hello world!");
+
+// We do reverse geocoding after object is saved into database.
+Parse.Cloud.afterSave('GasStation', function(request){
+    // TODO: do reverse geocoding for this object.
+    var geopoint = request.object.get('point');
 });
