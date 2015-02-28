@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "Bali Petrols": {
+            "applicationId": "<PARSE APP KEY>",
+            "masterKey": "<PARSE APP MASTERKEY>"
+        },
+        "_default": {
+            "link": "Bali Petrols"
+        }
+    }
+}
