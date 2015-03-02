@@ -1,0 +1,3 @@
+// Backend app settings
+
+exports.GOOGLE_GEOCODING_API_KEY = '<GOOGLE GEOCODING API KEY HERE>';
